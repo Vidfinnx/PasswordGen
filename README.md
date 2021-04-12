@@ -1,9 +1,11 @@
-This is my Random Password Generator Project Created for School
+This is my Random Password Generator Project Created for School.
+
 I learned a lot about for loops and generating arrays using this project.
+
 I feel very accomplished even though it took me about 7 days 3-5 hours 
 a night to create!
 
-Click the Red Pill Select Your Preferred Criteria
+Click the Red Pill, Select Your Preferred Criteria
 
 
 Enjoy!
