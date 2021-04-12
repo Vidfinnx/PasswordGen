@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Digital Font */
+@font-face {
+  font-family:'Digital' ;
+  src: url('./font/digital-7.ttf');
+}
+
+
+/* Header */
+h1{
+  font-family:'Digital',Georgia, 'Times New Roman', Times, serif
+}
+
+/* Html Body and Wrapper */
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+  background-image: url(./images/Matrix.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+  font-size:3em;
+  color:greenyellow;
+}
+
+/* Card Styling */
+.card {
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  font-family:'Digital',Georgia, 'Times New Roman', Times, serif;
+  text-align:center;
+  color:rgb(0, 178, 248);
+
+}
+
+.card-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: rgb(0, 178, 248);
+  height: 2px;
+  font-family:'Digital',Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.card-body {
+  min-height: 100px;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: rgb(0, 178, 248);
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Button Styling */
+.btn {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Hover Button effect */
+.btn:hover {background-color: #3e8e41}
+
+/* Button Clicked Styling */
+.btn:active {
+  background-color: #0011ff;
+  transform: translateY(4px);
+}
+
+/* remove border from clicked */
+button:focus {outline:0;}
+
+/* Button Disabled Styling */
+button[disabled] {
+  cursor: default;
+  background: #7c7c7c;
+}
+
+/* Multi Browser Placeholder Text Styling */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: greenyellow;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: greenyellow;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: greenyellow;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: greenyellow;
+}
+
+/* Password Text Styling */
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  background-color: black;
+  color:greenyellow;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
