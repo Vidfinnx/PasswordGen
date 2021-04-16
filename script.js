@@ -33,7 +33,7 @@ function generatePassword() {
 } else if (characterAmount < 8 || characterAmount > 128) {
     alert("You must choose between 8 and 128");
     generatePassword()
-    return
+    return "";
   
     
  
@@ -49,7 +49,7 @@ function generatePassword() {
 // Warning Popup that Criteria is not valid for password
 if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
      alert("Creation Criteria Not Valid!")
-     return
+     return "";
 }
     // New array from confirmation question selections
     let charCodes = []
